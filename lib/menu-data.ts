@@ -76,66 +76,34 @@ export const products: Product[] = [
   // Burgers
   {
     id: "burger-1",
-    name: "لحم همبرغر",
-    description: "برغر لحم مشوي طازج مع خس وطماطم ومخلل وصوص برغر مميز",
-    price: 285,
-    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80",
+    name: "همبرغر لحم دبل",
+    description: "200 غرام لحم + صوص برغر + بندورة + خس + مخلل + جبنة برغر + جبنة قشقوان",
+    price: 385,
+    image: "/h1.png",
     categoryId: "burger"
   },
   {
     id: "burger-2",
-    name: "موشرم همبرغر",
-    description: "برغر لحم مع مشروم طازج وجبنة وصوص كريمي غني",
-    price: 285,
-    image: "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=800&q=80",
+    name: "شكن برغر",
+    description: "صوص خاص + خس + مخلل + شكن",
+    price: 225,
+    image: "/h2.png",
     categoryId: "burger"
   },
   {
     id: "burger-3",
-    name: "لحم همبرغر دبل",
-    description: "قطعتا لحم مشويتان مع جبنة وخضار طازجة وصوص خاص",
-    price: 385,
-    image: "https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=800&q=80",
+    name: "برغر زنجر",
+    description: "صوص خاص + خس + مخلل + 2 قطع زنجر + جبنة شيدر",
+    price: 260,
+    image: "/h3.png",
     categoryId: "burger"
   },
   {
     id: "burger-4",
-    name: "لحم همبرغر اكسترا",
-    description: "برغر لحم كبير مع إضافات اكسترا وجبنة وصوص غني",
-    price: 450,
-    image: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=800&q=80",
-    categoryId: "burger"
-  },
-  {
-    id: "burger-5",
-    name: "برغر زنجر",
-    description: "فيليه دجاج زنجر مقرمش مع خس وصوص مايونيز حار",
-    price: 260,
-    image: "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=800&q=80",
-    categoryId: "burger"
-  },
-  {
-    id: "burger-6",
     name: "برغر زنجر اكسترا",
-    description: "زنجر دجاج مع جبنة وإضافات اكسترا وصوص مميز",
-    price: 350,
-    image: "https://images.unsplash.com/photo-1615297928064-24977384d0da?w=800&q=80",
-    categoryId: "burger"
-  },
-  {
-    id: "burger-7",
-    name: "برغر دجاج",
-    description: "برغر دجاج طري مع خس ومخلل وصوص خفيف",
-    price: 225,
-    image: "https://images.unsplash.com/photo-1608039755401-742074f0548d?w=800&q=80",
-    categoryId: "burger"
-  },
-  {
-    id: "burger-8",
-    name: "برغر دجاج دبل",
-    description: "برغر دجاج بقطعتين مع جبنة وخضار وصوص خاص",
-    price: 285,
-    image: "https://images.unsplash.com/photo-1619881590738-a111d176d906?w=800&q=80",
+    description: "صوص خاص + خس + مخلل + 2 قطع زنجر + جبنة شيدر + حلقات بصل + 2 قطع ستيك موزريلا",
+    price: 380,
+    image: "/h3.png",
     categoryId: "burger"
   },
   // Pizzas
@@ -221,15 +189,15 @@ export const products: Product[] = [
     name: "وجبة اسكالوب",
     description: "اسكالوب دجاج مقرمش مع تتبيلة مميزة وبطاطس",
     price: 340,
-    image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800&q=80",
+    image:  "/p8.png",
     categoryId: "broasted"
   },
   {
     id: "broasted-7",
-    name:  "/p5.png",
+    name: "وجبة ناغيت",
     description: "قطع ناغيت دجاج ذهبية مع بطاطس وصوص غمس",
     price: 250,
-    image: "https://images.unsplash.com/photo-1569058242567-93de6f36f8eb?w=800&q=80",
+    image: "/p5.png",
     categoryId: "broasted"
   },
   {
@@ -237,7 +205,7 @@ export const products: Product[] = [
     name: "وجبة سوبريم",
     description: "وجبة دجاج سوبريم غنية بالنكهة مع بطاطس وصوص خاص",
     price: 350,
-    image: "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?w=800&q=80",
+    image:"/p6.png",
     categoryId: "broasted"
   },
   {
@@ -245,56 +213,16 @@ export const products: Product[] = [
     name: "وجبة كوردون بلو",
     description: "صدر دجاج كوردون بلو محشو بالجبنة ويقدم مع بطاطس",
     price: 375,
-    image: "https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=800&q=80",
+    image: "/p7.png",
     categoryId: "broasted"
   },
   // Sandwiches
   {
     id: "sandwich-1",
-    name: "صندويش كريسبي خبز",
-    description: "قطع دجاج كريسبي مقرمشة داخل خبز طازج مع صوص خاص وخضار",
-    price: 260,
-    image: "https://images.unsplash.com/photo-1521390188846-e2a3a97453a0?w=800&q=80",
-    categoryId: "sandwiches"
-  },
-  {
-    id: "sandwich-2",
-    name: "صندويش كريسبي صمون",
-    description: "دجاج كريسبي بصمون طري مع خس ومخلل ومايونيز",
-    price: 260,
-    image: "https://images.unsplash.com/photo-1481070555726-e2fe8357725c?w=800&q=80",
-    categoryId: "sandwiches"
-  },
-  {
-    id: "sandwich-3",
     name: "صندويش فاهيتا",
-    description: "شرائح دجاج فاهيتا متبلة مع فلفل ملون وبصل وصوص غني",
-    price: 270,
-    image: "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=800&q=80",
-    categoryId: "sandwiches"
-  },
-  {
-    id: "sandwich-4",
-    name: "صندويش مكسيكانو",
-    description: "ساندويش حار بنكهة مكسيكية مع دجاج وصوص جبنة وخضار",
-    price: 240,
-    image: "https://images.unsplash.com/photo-1540713434306-58505cf1b6fc?w=800&q=80",
-    categoryId: "sandwiches"
-  },
-  {
-    id: "sandwich-5",
-    name: "زنجر كريب",
-    description: "كريب محشو بقطع زنجر مقرمشة مع جبنة وصوص كريمي",
-    price: 260,
-    image: "https://images.unsplash.com/photo-1565299585323-38174c4a6471?w=800&q=80",
-    categoryId: "sandwiches"
-  },
-  {
-    id: "sandwich-6",
-    name: "صندويش سوبريم",
-    description: "ساندويش غني بالدجاج والخضار والجبنة مع صوص السوبريم",
+    description: "صوص خاص + قطع دجاج مشوي + فليفلة خضرة + فليفلة حمرة + فطر + جبنة موزريلا",
     price: 250,
-    image: "https://images.unsplash.com/photo-1550317138-10000687a72b?w=800&q=80",
+    image: "/s1.png",
     categoryId: "sandwiches"
   },
   // Drinks
