@@ -1,9 +1,10 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Heart, Instagram, Twitter, MapPin, Phone, Clock } from "lucide-react"
+import { Instagram, Twitter, MapPin, Phone, Clock } from "lucide-react"
 import { Logo } from "./logo"
 import { useLanguage } from "@/lib/language-context"
+import { categories } from "@/lib/menu-data"
 
 export function Footer() {
   const { t, language } = useLanguage()
@@ -17,15 +18,19 @@ export function Footer() {
   const contactInfo = [
     { 
       icon: MapPin, 
-      text: language === "ar" ? "تركيا، الريحانية" : "Türkiye, Reyhanlı" 
+      text: "Yeni mah atatürk cd.gözüaçık apt. no:194/1D"
     },
     { 
       icon: Phone, 
-      text: "+90 326 123 4567" 
+      text: language === "ar" ? "رقم المطعم: 05052245577" : "Restoran: 05052245577"
+    },
+    { 
+      icon: Phone, 
+      text: language === "ar" ? "رقم الشكاوي: 05418167706" : "Şikayet hattı: 05418167706"
     },
     { 
       icon: Clock, 
-      text: language === "ar" ? "١٠ صباحاً - ١٢ مساءً" : "10:00 - 00:00" 
+      text: language === "ar" ? "١١ صباحاً - ١٢:٣٠ مساءً" : "11:00 - 00:30" 
     },
   ]
 
@@ -116,15 +121,19 @@ export function Footer() {
               {t.quickLinks}
             </h3>
             <div className="space-y-3 text-center md:text-end">
-              {Object.entries(t.categories).map(([key, cat]) => (
+              {categories.map((category) => {
+                const categoryTranslation = t.categories[category.id as keyof typeof t.categories]
+
+                return (
                 <a
-                  key={key}
-                  href={`/category/${key}`}
+                  key={category.id}
+                  href={`/category/${category.id}`}
                   className="block text-muted-foreground hover:text-primary transition-colors duration-300 text-sm"
                 >
-                  {cat.name}
+                  {categoryTranslation?.name || category.name}
                 </a>
-              ))}
+                )
+              })}
             </div>
           </motion.div>
         </div>
@@ -137,28 +146,21 @@ export function Footer() {
           viewport={{ once: true }}
           className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground"
         >
-          {/* Made with Love */}
-          <div className="flex items-center gap-2 order-2 md:order-1">
-            <span>{t.madeWith}</span>
-            <motion.span
-              animate={{ 
-                scale: [1, 1.3, 1],
-              }}
-              transition={{ 
-                duration: 0.8, 
-                repeat: Infinity, 
-                repeatDelay: 1.5,
-                ease: "easeInOut"
-              }}
+          <p className="order-2 md:order-1">
+            {language === "ar" ? "برمجة شركة " : "Yazılım: "}
+            <a
+              href="https://syriedev.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-primary transition-colors hover:text-primary/80"
             >
-              <Heart className="w-4 h-4 text-red-500 fill-red-500" />
-            </motion.span>
-            <span>{t.inSaudi}</span>
-          </div>
+              {language === "ar" ? "سيرياديف" : "SyrieDev"}
+            </a>
+          </p>
 
           {/* Copyright */}
           <p className="order-1 md:order-2">
-            &copy; {currentYear} {language === "ar" ? "نوتو" : "Noto"}. {t.allRights}
+            &copy; {currentYear} {language === "ar" ? "نوتو تشكن بيتزا" : "NOTO CHİCKEN PİZZA"}. {t.allRights}
           </p>
         </motion.div>
       </div>
