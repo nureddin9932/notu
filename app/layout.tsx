@@ -11,8 +11,8 @@ const notoKufiArabic = Noto_Kufi_Arabic({
 });
 
 export const metadata: Metadata = {
-  title: 'Ù†ÙˆØªÙˆ | Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ø·Ø¹Ø§Ù…',
-  description: 'Ù…Ù†ÙŠÙˆ Ø±Ù‚Ù…ÙŠ ØªÙØ§Ø¹Ù„ÙŠ Ø¹ØµØ±ÙŠ',
+  title: 'نوتو تشكن بيتزا',
+  description: 'منيو نوتو تشكن بيتزا',
   icons: {
     icon: 'data:,',
   },
