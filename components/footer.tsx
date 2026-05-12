@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Instagram, Twitter, MapPin, Phone, Clock } from "lucide-react"
+import { Facebook, Instagram, MapPin, Phone, Clock } from "lucide-react"
 import { Logo } from "./logo"
 import { useLanguage } from "@/lib/language-context"
 import { categories } from "@/lib/menu-data"
@@ -11,8 +11,16 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Twitter, href: "#", label: "Twitter" },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/noto_chickens_pizza?igsh=bmR4M2M5ZXhjYjU3",
+      label: "Instagram",
+    },
+    {
+      icon: Facebook,
+      href: "https://www.facebook.com/share/1CqtoMWDxm/",
+      label: "Facebook",
+    },
   ]
 
   const contactInfo = [
@@ -74,6 +82,8 @@ export function Footer() {
                 <motion.a
                   key={index}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={social.label}
                   className="group relative w-11 h-11 rounded-full bg-secondary/60 border border-border/50 flex items-center justify-center text-muted-foreground overflow-hidden"
                   whileHover={{ scale: 1.1 }}

@@ -3,27 +3,26 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Noto Restaurant Menu - Premium Dark Theme with Orange Accent */
+/* Noto Restaurant Menu - Light Silver Theme with Orange Accent */
 :root {
-  /* Dark theme as default */
-  --background: oklch(0.18 0.01 60);
-  --foreground: oklch(0.98 0 0);
-  --card: oklch(0.23 0.012 60);
-  --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.22 0.012 60);
-  --popover-foreground: oklch(0.98 0 0);
+  --background: #dedbd4;
+  --foreground: #2d2923;
+  --card: #f4f2ed;
+  --card-foreground: #2d2923;
+  --popover: #f4f2ed;
+  --popover-foreground: #2d2923;
   --primary: oklch(0.7 0.18 50);
-  --primary-foreground: oklch(0.18 0.01 60);
-  --secondary: oklch(0.28 0.014 60);
-  --secondary-foreground: oklch(0.98 0 0);
-  --muted: oklch(0.3 0.012 60);
-  --muted-foreground: oklch(0.72 0 0);
+  --primary-foreground: #221f1a;
+  --secondary: #cbc7be;
+  --secondary-foreground: #2d2923;
+  --muted: #c5c1b8;
+  --muted-foreground: #625c52;
   --accent: oklch(0.7 0.18 50);
-  --accent-foreground: oklch(0.18 0.01 60);
+  --accent-foreground: #221f1a;
   --destructive: oklch(0.55 0.2 25);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.34 0.016 60);
-  --input: oklch(0.28 0.014 60);
+  --border: #b4afa5;
+  --input: #cbc7be;
   --ring: oklch(0.7 0.18 50);
   --chart-1: oklch(0.7 0.18 50);
   --chart-2: oklch(0.65 0.15 30);
@@ -31,48 +30,48 @@
   --chart-4: oklch(0.6 0.18 40);
   --chart-5: oklch(0.7 0.12 60);
   --radius: 1rem;
-  --sidebar: oklch(0.21 0.012 60);
-  --sidebar-foreground: oklch(0.98 0 0);
+  --sidebar: #d7d3cb;
+  --sidebar-foreground: #2d2923;
   --sidebar-primary: oklch(0.7 0.18 50);
-  --sidebar-primary-foreground: oklch(0.18 0.01 60);
-  --sidebar-accent: oklch(0.28 0.014 60);
-  --sidebar-accent-foreground: oklch(0.98 0 0);
-  --sidebar-border: oklch(0.34 0.016 60);
+  --sidebar-primary-foreground: #221f1a;
+  --sidebar-accent: #c5c1b8;
+  --sidebar-accent-foreground: #2d2923;
+  --sidebar-border: #b4afa5;
   --sidebar-ring: oklch(0.7 0.18 50);
 }
 
 .dark {
-  --background: oklch(0.18 0.01 60);
-  --foreground: oklch(0.98 0 0);
-  --card: oklch(0.23 0.012 60);
-  --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.22 0.012 60);
-  --popover-foreground: oklch(0.98 0 0);
+  --background: #dedbd4;
+  --foreground: #2d2923;
+  --card: #f4f2ed;
+  --card-foreground: #2d2923;
+  --popover: #f4f2ed;
+  --popover-foreground: #2d2923;
   --primary: oklch(0.7 0.18 50);
-  --primary-foreground: oklch(0.18 0.01 60);
-  --secondary: oklch(0.28 0.014 60);
-  --secondary-foreground: oklch(0.98 0 0);
-  --muted: oklch(0.3 0.012 60);
-  --muted-foreground: oklch(0.72 0 0);
+  --primary-foreground: #221f1a;
+  --secondary: #cbc7be;
+  --secondary-foreground: #2d2923;
+  --muted: #c5c1b8;
+  --muted-foreground: #625c52;
   --accent: oklch(0.7 0.18 50);
-  --accent-foreground: oklch(0.18 0.01 60);
+  --accent-foreground: #221f1a;
   --destructive: oklch(0.55 0.2 25);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.34 0.016 60);
-  --input: oklch(0.28 0.014 60);
+  --border: #b4afa5;
+  --input: #cbc7be;
   --ring: oklch(0.7 0.18 50);
   --chart-1: oklch(0.7 0.18 50);
   --chart-2: oklch(0.65 0.15 30);
   --chart-3: oklch(0.75 0.15 80);
   --chart-4: oklch(0.6 0.18 40);
   --chart-5: oklch(0.7 0.12 60);
-  --sidebar: oklch(0.21 0.012 60);
-  --sidebar-foreground: oklch(0.98 0 0);
+  --sidebar: #d7d3cb;
+  --sidebar-foreground: #2d2923;
   --sidebar-primary: oklch(0.7 0.18 50);
-  --sidebar-primary-foreground: oklch(0.18 0.01 60);
-  --sidebar-accent: oklch(0.28 0.014 60);
-  --sidebar-accent-foreground: oklch(0.98 0 0);
-  --sidebar-border: oklch(0.34 0.016 60);
+  --sidebar-primary-foreground: #221f1a;
+  --sidebar-accent: #c5c1b8;
+  --sidebar-accent-foreground: #2d2923;
+  --sidebar-border: #b4afa5;
   --sidebar-ring: oklch(0.7 0.18 50);
 }
 
@@ -123,6 +122,8 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-color: var(--background);
+    color: var(--foreground);
   }
 }
 
@@ -143,5 +144,5 @@ html {
 /* Selection color */
 ::selection {
   background-color: oklch(0.7 0.18 50 / 0.3);
-  color: oklch(0.98 0 0);
+  color: #2d2923;
 }

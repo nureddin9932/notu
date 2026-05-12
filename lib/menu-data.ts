@@ -27,12 +27,18 @@ export const categories: Category[] = [
     id: "burger",
     name: "برجر",
     description: "ألذ أنواع البرجر المشوي الطازج",
-    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&q=80",
+    image: "/h1.png",
     color: "orange",
     icon: "🍔"
   },
-
-  
+  {
+    id: "broasted",
+    name: "بروستد",
+    description: "دجاج بروستد مقرمش ولذيذ",
+    image: "/p2.png",
+    color: "yellow",
+    icon: "🍗"
+  },
   {
     id: "pizza",
     name: "بيتزا",
@@ -41,21 +47,11 @@ export const categories: Category[] = [
     color: "red",
     icon: "🍕"
   },
-
-
-  {
-    id: "broasted",
-    name: "بروستد",
-    description: "دجاج بروستد مقرمش ولذيذ",
-    image: "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=800&q=80",
-    color: "yellow",
-    icon: "🍗"
-  },
   {
     id: "sandwiches",
     name: "ساندويتشات",
     description: "تشكيلة متنوعة من الساندويتشات",
-    image: "https://images.unsplash.com/photo-1553909489-cd47e0907980?w=800&q=80",
+    image: "/sandavsh/PeynirliPatatesSandvi.png",
     color: "green",
     icon: "🥪"
   },

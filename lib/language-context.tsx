@@ -216,7 +216,7 @@ const translations: Record<Language, Translations> = {
 
 
       broasted: { 
-        name: "Broasted", 
+        name: "Çıtır Tavuk", 
         description: "Çıtır ve lezzetli broasted tavuk",
         heroText: "Dışı çıtır içi yumuşak broasted tavuk, gizli baharat karışımıyla hazırlanmış"
       },

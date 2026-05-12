@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#2b2822',
+  themeColor: '#dedbd4',
   width: 'device-width',
   initialScale: 1,
 }
@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ar" dir="rtl" className="dark" data-scroll-behavior="smooth">
+    <html lang="ar" dir="rtl" data-scroll-behavior="smooth">
       <body className={`${notoKufiArabic.className} antialiased`}>
         <LanguageProvider>
           {children}
